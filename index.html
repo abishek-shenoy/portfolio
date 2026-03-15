@@ -393,7 +393,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     #projects .section-label { color: var(--aqua); }
     #projects .section-title { color: var(--white); }
     .projects-grid { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 48px; }
-    .project-tile { border-radius: var(--radius-lg); background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); padding: 28px; cursor: pointer; transition: background .25s, transform .25s; }
+    .project-tile { border-radius: var(--radius-lg); background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); padding: 28px; cursor: pointer; transition: background .25s, transform .25s; display: block; text-decoration: none; color: inherit; }
     .project-tile:hover { background: rgba(255,255,255,.09); transform: translateY(-4px); }
     .project-emoji { font-size: 2rem; margin-bottom: 16px; }
     .project-tile h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
@@ -465,9 +465,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .footer-top { grid-template-columns: 1fr; }
       .nav-links { display: none; }
     }
-    #projects {
-  display: none;
-}
+   
 
 #testimonials {
   display: none;
@@ -1006,12 +1004,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="section-label">Side Projects</div>
     <h2 class="section-title" style="color:var(--white);">Independent <span>Projects</span></h2>
     <div class="projects-grid">
-      <div class="project-tile">
-        <div class="project-emoji">🎓</div>
-        <h3>The AI MD — Platform Evaluation</h3>
-        <p>Comparative evaluation of Kajabi, Teachable, Thinkific, ThriveCart Learn, and LearnWorlds for a medical education gated video platform.</p>
-        <div class="project-link">View Project →</div>
-      </div>
+      <a class="project-tile" href="paid-media-budget-calculator.html" target="_blank" rel="noopener noreferrer">
+  		<div class="project-emoji">🎓</div>
+  		<h3>The AI MD — Platform Evaluation</h3>
+  		<p>Comparative evaluation of Kajabi, Teachable, Thinkific, ThriveCart Learn, and LearnWorlds for a medical education gated video platform.</p>
+  		<div class="project-link">View Project</div>
+	  </a>
       <div class="project-tile">
         <div class="project-emoji">📋</div>
         <h3>Paid Media Lead Gen Playbook</h3>
